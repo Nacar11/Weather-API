@@ -4,7 +4,7 @@ import customtkinter
 customtkinter.set_appearance_mode("dark")  # Modes: "System" (standard), "Dark", "Light"
 customtkinter.set_default_color_theme("blue")  # Themes: "blue" (standard), "green", "dark-blue"
 
-app = customtkinter.CTk()
+app = tkinter.Tk()
 app.geometry("400x780")
 app.title("CustomTkinter simple_example.py")
 
@@ -35,7 +35,7 @@ slider_1.set(0.5)
 
 entry_1 = customtkinter.CTkEntry(master=frame_1, placeholder_text="CTkEntry")
 entry_1.pack(pady=10, padx=10)
-
+# entry_1.focus_set()
 optionmenu_1 = customtkinter.CTkOptionMenu(frame_1, values=["Option 1", "Option 2", "Option 42 long long long..."])
 optionmenu_1.pack(pady=10, padx=10)
 optionmenu_1.set("CTkOptionMenu")
